@@ -62,7 +62,7 @@ header {
 main {
     padding: 20px;
     margin-left: 250px; /* Dejar espacio para la barra lateral */
-    width: calc(100% - 250px); /* Ajustar el ancho del main */
+    width: calc(100% - 100px); /* Ajustar el ancho del main */
     margin-top: 60px; /* Dejar espacio para el header */
 }
 
@@ -82,7 +82,7 @@ main {
     background-color: #282828;
     border-radius: 8px;
     padding: 10px; /* Reducir el padding */
-    width: 150px; /* Disminuir el ancho de las tarjetas */
+    width: 100px; /* Disminuir el ancho de las tarjetas */
     transition: transform 0.3s;
     display: flex; /* Usar flexbox en la tarjeta */
     flex-direction: column; /* Alinear el contenido en columna */
