@@ -17,11 +17,11 @@ header {
 
 .barraLateral {
     width: 250px;
-    /* height: 1000px; */
-    background-color: #181818;
+    background-color: #202020; /* Color de fondo más oscuro */
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     margin-right: 20px;
+    border-radius: 8px; /* Bordes redondeados */
 }
 
 .barraLateral ul {
@@ -30,21 +30,26 @@ header {
 }
 
 .barraLateral ul li {
-    margin: 10px 0;
+    margin: 15px 0; /* Mayor margen entre los elementos */
 }
 
 .barraLateral ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 14px;
-    padding: 10px;
-    display: block;
+    font-size: 16px; /* Aumentar el tamaño de la fuente */
+    padding: 10px 15px; /* Padding más amplio */
+    display: flex; /* Usar flexbox para alinear icono y texto */
+    align-items: center; /* Centrar verticalmente */
     border-radius: 7px;
     transition: background-color 0.3s, transform 0.2s;
 }
 
+.barraLateral ul li a i {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
 .barraLateral ul li a:hover {
-    background-color: #3a3a3a;
+    background-color: #3a3a3a; /* Color de fondo al pasar el mouse */
     transform: scale(1.05);
 }
 
@@ -131,3 +136,5 @@ main {
     height: auto;
     border-radius: 5px;
 }
+
+
