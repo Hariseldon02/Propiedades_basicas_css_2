@@ -17,6 +17,7 @@ header {
 
 .barraLateral {
     width: 250px;
+    /* height: 1000px; */
     background-color: #181818;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
@@ -78,10 +79,11 @@ main {
 }
 
 .contenedor logo-container {
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 .buscador-contenedor-container {
+    margin-left: 5px;
     display: flex;
 }
 
@@ -122,4 +124,10 @@ main {
     margin: 5px 0 0;
     font-size: 14px;
     color: #b3b3b3;
+}
+
+.tarjetaCanciones img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
