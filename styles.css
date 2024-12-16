@@ -4,24 +4,28 @@ body {
     padding: 0;
     background-color: #181818;
     color: #fff;
+    display: flex; /* Usar flexbox en el body */
 }
 
 header {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #202020;
+    width: 100%; /* Asegurarse de que el header ocupe todo el ancho */
+    position: fixed; /* Fijar el header en la parte superior */
+    top: 0; /* Alinear el header en la parte superior */
+    z-index: 1000; /* Asegurarse de que el header esté por encima de otros elementos */
 }
 
 .barraLateral {
     width: 250px;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
     background-color: #202020; /* Color de fondo más oscuro */
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-    margin-right: 20px;
-    border-radius: 8px; /* Bordes redondeados */
+    border-radius: 0 8px 8px 0; /* Bordes redondeados solo a la derecha */
 }
 
 .barraLateral ul {
@@ -39,7 +43,7 @@ header {
     color: #ffffff;
     text-decoration: none;
     font-size: 16px; /* Aumentar el tamaño de la fuente */
-    padding: 10px 15px; /* Padding más amplio */
+    padding: 15px; /* Padding más amplio */
     display: flex; /* Usar flexbox para alinear icono y texto */
     align-items: center; /* Centrar verticalmente */
     border-radius: 7px;
@@ -57,50 +61,13 @@ header {
 
 main {
     padding: 20px;
+    margin-left: 250px; /* Dejar espacio para la barra lateral */
+    width: calc(100% - 250px); /* Ajustar el ancho del main */
+    margin-top: 60px; /* Dejar espacio para el header */
 }
 
 .music-section {
     margin-left: 20px;
-}
-
-.hover-button {
-    padding: 15px 30px;
-    font-size: 16px;
-    color: white;
-    background-color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.hover-button:hover {
-    background-color: #28d8d5;
-    transform: scale(1.15);
-}
-
-.Contenedor-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.contenedor logo-container {
-    margin-right: 50px;
-}
-
-.buscador-contenedor-container {
-    margin-left: 5px;
-    display: flex;
-}
-
-.buscador-contenedor-input {
-    padding: 5px;
-}
-
-.buscador-contenedor-button {
-    padding: 5px 10px;
-    margin-left: 5px;
 }
 
 .contenedor-canciones {
@@ -138,5 +105,3 @@ main {
     height: auto;
     border-radius: 5px;
 }
-
-
