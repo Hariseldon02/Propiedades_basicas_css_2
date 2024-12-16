@@ -27,6 +27,8 @@ header {
 .barraLateral ul {
     list-style-type: none;
     padding: 0;
+    display: flex; /* Usar flexbox para la lista */
+    flex-direction: column; /* Alinear los elementos en columna */
 }
 
 .barraLateral ul li {
