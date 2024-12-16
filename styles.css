@@ -110,3 +110,16 @@ main {
     height: auto;
     border-radius: 5px;
 }
+
+/* Estilos para la barra de reproducción */
+.barra-reproduccion {
+    background-color: #202020;
+    position: fixed; /* Fijar la barra en la parte inferior */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -2px 5px;
+}
